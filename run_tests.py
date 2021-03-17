@@ -488,7 +488,11 @@ programs = {
        {
            "url":"https://github.com/nlohmann/json",
            "commands":[os.path.join(PARSERS_DIR, "test_nlohmann_json_20190718/bin/test_nlohmann_json")]
-       }
+       },
+    "Assemblyscript-JSON": {
+        "url":"https://github.com/nearprotocol/assemblyscript-json",
+        "commands":["bash", os.path.join(PARSERS_DIR, "test_as_json/run.sh"), TEST_CASES_DIR_PATH]
+    }
 }
 
 def run_tests(restrict_to_path=None, restrict_to_program=None):
