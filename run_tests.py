@@ -544,7 +544,7 @@ def run_tests(restrict_to_path=None, restrict_to_program=None):
                     a = commands + [file_path]
 
                 #print("->", a)
-                print("--", " ".join(a))
+                # print("--", " ".join(a))
 
                 try:
                     status = subprocess.call(
